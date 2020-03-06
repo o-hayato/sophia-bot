@@ -15,5 +15,5 @@ config.ts
 
 # Ignore package locks
 package-lock.json
-
+.DS_Store
 .idea/
