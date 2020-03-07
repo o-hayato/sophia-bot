@@ -1,5 +1,4 @@
 import { KlasaClient, KlasaClientOptions } from 'klasa'
-import { token } from '../config'
 
 class SophiaClient extends KlasaClient {
   constructor(options: KlasaClientOptions) {
@@ -17,6 +16,7 @@ const config: KlasaClientOptions = {
 if(process.env.BOT_TOKEN){
   new SophiaClient(config).login(process.env.BOT_TOKEN)
 }else{
+  import { token } from '../config'
   new SophiaClient(config).login(token)
 }
 
