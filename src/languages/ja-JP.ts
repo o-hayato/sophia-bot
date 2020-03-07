@@ -100,7 +100,7 @@ module.exports = class extends Language {
             COMMAND_LOAD_DESCRIPTION: 'ボットからピースを読み込みます。',
             COMMAND_PING: '計測中...',
             COMMAND_PING_DESCRIPTION: 'Discordへの応答速度を計測します。',
-            COMMAND_PINGPONG: (diff, ping) => `Pong! (往復所要時間: ${diff}ms、Heartbeat: ${ping}ms)`,
+            COMMAND_PINGPONG: (diff, ping) => `ぽん! (往復所要時間: ${diff}ms、Heartbeat: ${ping}ms)`,
             COMMAND_INVITE: () => [
                 `サーバーに${this.client.user.username}を追加するには:`,
                 `<${this.client.invite}>`,
@@ -157,7 +157,7 @@ module.exports = class extends Language {
             COMMAND_CONF_USER_DESCRIPTION: 'ユーザーごとに設定を定義する。',
             COMMAND_CONF_USER: (key, list) => `**ユーザー設定${key}**\n${list}`,
             COMMAND_STATS: (memUsage, uptime, users, guilds, channels, klasaVersion, discordVersion, processVersion, message) => [
-                '統計情報を表示するぞ =',
+                '= 統計情報を表示するぞ =',
                 '',
                 `• 使用メモリ   :: ${memUsage} MB`,
                 `• 起動時間     :: ${uptime}`,
