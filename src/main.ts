@@ -1,16 +1,17 @@
-import { KlasaClient, KlasaClientOptions } from 'klasa';
-import { config, token } from '../config';
+import { KlasaClient, KlasaClientOptions } from 'klasa'
 
-class MyKlasaClient extends KlasaClient {
+class SophiaClient extends KlasaClient {
+  constructor(options: KlasaClientOptions) {
+    super(options)
+    // Add any properties to your Klasa Client
+  }
 
-	constructor(options: KlasaClientOptions) {
-		super(options);
-
-		// Add any properties to your Klasa Client
-	}
-
-	// Add any methods to your Klasa Client
-
+  // Add any methods to your Klasa Client
 }
 
-new MyKlasaClient(config).login(token);
+const config: KlasaClientOptions = {
+  prefix: '!',
+  language: 'ja-JP'
+};
+
+new SophiaClient(config).login(token)
