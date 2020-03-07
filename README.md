@@ -17,8 +17,16 @@ Description
 Requirements
 ------------
 
-* node v10.+
+* node v12.4.0
+* typescript
+* discord.js
 
 Usage
 -----
 
+* build
+  * `yarn build`
+* localで起動
+  * `env BOT_TOKEN='ボットのトークン' yarn start`
+* deploy
+  * masterにマージされるとherokuに自動デプロイ
