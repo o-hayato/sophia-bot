@@ -1,0 +1,8 @@
+{
+  "name": "sophia-bot on Heroku: Node.js",
+  "description": "A barebones Node.js app using Express 4",
+  "repository": "https://github.com/o-hayato/sophia-bot",
+  "logo": "https://github.com/o-hayato/sophia-bot/image/P5S_icon_sophia.png",
+  "keywords": ["node", "heroku"],
+  "image": "heroku/nodejs"
+}
