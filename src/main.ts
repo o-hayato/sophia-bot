@@ -13,10 +13,10 @@ const config: KlasaClientOptions = {
   language: 'ja-JP'
 }
 
-if(process.env.BOT_TOKEN){
-  new SophiaClient(config).login(process.env.BOT_TOKEN)
-}else{
-  import { token } from '../config'
-  new SophiaClient(config).login(token)
-}
+new SophiaClient(config).login(process.env.BOT_TOKEN)
+
+// local-debug 用
+// import { token } from '../config'
+// new SophiaClient(config).login(token)
+
 
