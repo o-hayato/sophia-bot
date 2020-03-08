@@ -98,7 +98,7 @@ module.exports = class extends Language {
             COMMAND_LOAD_FAIL: 'ファイルが存在しないか、ファイルのロード中にエラーが発生しました。コンソールを確認してください。',
             COMMAND_LOAD_ERROR: (type, name, error) => `❌ ${type}: ${name} の読み込みに失敗しました。原因:${util.codeBlock('js', error)}`,
             COMMAND_LOAD_DESCRIPTION: 'ボットからピースを読み込みます。',
-            COMMAND_PING: '計測中...',
+            COMMAND_PING: '計測中だ...',
             COMMAND_PING_DESCRIPTION: 'Discordへの応答速度を計測します。',
             COMMAND_PINGPONG: (diff, ping) => `ぽん! (往復所要時間: ${diff}ms、Heartbeat: ${ping}ms)`,
             COMMAND_INVITE: () => [

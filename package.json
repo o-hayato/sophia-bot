@@ -16,7 +16,7 @@
     "test:lint": "eslint --ext ts src",
     "build": "tsc -p .",
     "watch": "tsc -p . -w",
-    "start": "node dist/src/main.js"
+    "start": "node dist/main.js"
   },
   "dependencies": {
     "discord.js": "discordjs/discord.js",

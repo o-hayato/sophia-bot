@@ -10,7 +10,8 @@ class SophiaClient extends KlasaClient {
 
 const config: KlasaClientOptions = {
   prefix: '!',
-  language: 'ja-JP'
+  language: 'ja-JP',
+  readyMessage: (client) => `準備完了だ！`
 }
 
 new SophiaClient(config).login(process.env.BOT_TOKEN)
